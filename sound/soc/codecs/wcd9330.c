@@ -681,14 +681,14 @@ int tomtom_enable_qfuse_sensing(struct snd_soc_codec *codec)
 }
 EXPORT_SYMBOL(tomtom_enable_qfuse_sensing);
 
-static int tomtom_get_sample_rate(struct snd_soc_codec *codec, int path)
+/*static int tomtom_get_sample_rate(struct snd_soc_codec *codec, int path)
 {
 	if (path == RX8_PATH)
 		return snd_soc_read(codec, TOMTOM_A_CDC_RX8_B5_CTL);
 	else
 		return snd_soc_read(codec,
 			(TOMTOM_A_CDC_RX1_B5_CTL + 8 * (path - 1)));
-}
+}*/
 
 static int tomtom_compare_bit_format(struct snd_soc_codec *codec,
 				int bit_format)
